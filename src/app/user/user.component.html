@@ -1,0 +1,88 @@
+<div class="main-content" >
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">Editer son Profil</h4>
+                    </div>
+                    <div class="content">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Pseudo</label>
+                                        <input type="text" class="form-control" placeholder="Nom d'utilisateur" value="{{user.pseudo}}">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Adresse Mail</label>
+                                        <input type="email" class="form-control" placeholder="Email" value="{{user.email}}">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Numéro de téléphone</label>
+                                        <input type="text" class="form-control" placeholder="Numéro de téléphone" value="{{user.tel}}">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Noms et Prénoms</label>
+                                        <input type="text" class="form-control" placeholder="Noms et Prénoms" value="{{user.nom}}">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Adresse</label>
+                                        <input type="text" class="form-control" placeholder="Adresse" value="{{user.adresse}}">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--<div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>About Me</label>
+                                        <textarea rows="5" class="form-control" placeholder="Here can be your description" value="Mike">Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</textarea>
+                                    </div>
+                                </div>
+                            </div> -->
+                            
+                            <button type="submit" class="btn btn-info btn-fill pull-right">Mettre à jour le profil</button>
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-user">
+                    <div class="image">
+                        <img src="assets/img/bg-profil.jpg" alt="..."/>
+                    </div>
+                    <div class="content">
+                        <div class="author">
+                            <a href="#">
+                                <img class="avatar border-gray" src="assets/img/faces/face-0.jpg" alt="..."/>
+
+                                <h4 class="title">{{user.nom}}<br />
+                                    <small>{{user.pseudo}}</small>
+                                </h4>
+                            </a>
+                        </div>
+                        <p class="description text-center"> {{user.tel}} <br>
+                            {{user.email}} 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
